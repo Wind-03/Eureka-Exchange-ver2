@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="spinner">
+      <img 
+        src="images/logo-black.png" 
+        alt="eureka exchange loading logo" 
+        width="240" height="100"
+        class="loader-image"/>
+      <div class="loading center">
+      <div class="loading-bar"></div>
+  </div>
+  </div>
+  <section class="header">
+    <div class="nav-wrapper">
+      <nav class="Navbar">
+        <div class="logo-wrapper">           
+            <img src="images/logo-black.png" alt="Eureka-Exchange-logo" class='logo' width="200"/>
+        </div>
+        <div class="nav--details" id="myLinks">
+          <a href="./blog.html" class="top-border">Blog</a>
+          <a href="./about-us.html">About Us</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </nav>
+      <div>
+        <a><img class="icon" src="./images/icons8-hamburger-menu-50.png" width="30" height="30" onclick="myFunction()"></a>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="slideshow-container ">
+      <!-- Full images with numbers and message Info -->
+      <div class="Containers"  id="img-1">
+        <img src="./images/link-blurred.jpg" id="blurred" class="slide">
+        <img src="./images/block-1-transformed.jpeg" id="clear" class="slide">
+          <p class="Info fade-in-bottom minimised-1">Linking Academia with industry <span class="orange-text">.</span><br>
+            <span class="reduced-text fade-in-bottom">(democratising research models)</span></p>
+      </div>
+      <div class="Containers">
+        <img src="./images/research-blured.jpg" class="slide" id="blurred-3">
+        <img src="./images/collabo-2-transformed.jpeg" id="clear-2" class="slide">
+        <p class="Info fade-in-bottom push-up">Enabling research collaboration to solve pressing needs<span class="orange-text">.</span><br><span class="reduced-text fade-in-bottom push-down">(Sustainability, Cancer Research)</span>
+        </p>
+      </div>
+      <div class="Containers">
+        <img src="./images/collabo-blurred.jpg" class="slide" id="blurred-2">
+        <img src="./images/Businessman_and_doctor_shaking_hands-transformed.jpeg" id="clear-3" class="slide">
+        <p class="Info fade-in-bottom minimised"  >Support Research Institutions<span class="orange-text">.</span><br><span class="reduced-text fade-in-bottom">(model commercialisation)</span></p>
+      </div>
+      <!-- Back and forward buttons -->
+      <div class="arrow-wrappers">
+        <span class="material-symbols-outlined" onclick="plusSlides(-1)"  id="right">arrow_forward</span>
+      </div>
+      <div class="arrow-wrappers">
+        <span class="material-symbols-outlined" onclick="plusSlides(1)" id="left">arrow_back</span>
+      </div>
+  </section>
+  <div class="background-container">
+    <section class="background">
+      <h1 class="background-header" 
+        data-aos="fade-up"            
+        data-aos-offset="100"
+        data-aos-delay="0"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center">The Narrative Unfolded<span class="orange-text">.</span></h1>
+      <div class="background-details" 
+              data-aos="fade-up"            
+              data-aos-offset="100"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+        <div class="background-details-text">
+          <h1 class="orange-text">Research Commercialisation</h1>
+          <div class="background-text-expanded">
+            <p>The commercialization of research outcomes faces significant challenges, with success rates generally
+              ranging between 5% and 20%.</p>
+            <p class="hidden-text">
+              Challenges including the need for refinement, limited funding, and the academia-industry gap hinder success                   rates, yet collaborative efforts and innovation support offer potential for improved commercialization outcomes.
+            </p>
+          </div>
+        </div>
+        <img src="./images/Background-1.png" alt="" class="background-image-one flex-img">
+      </div>
+      <div class="background-details"
+              data-aos="fade-up"            
+              data-aos-offset="100"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+        <img src="./images/Background-2.png" alt="" class="background-image-one">
+        <div class="background-details-text">
+          <h1 class="orange-text">Market Opportunity</h1>
+          <h3>There's a growing need for domain-specific models to unlock the value and achieve the projected
+            global digital twin market size of $48.2 billion by 2026
+          </h3>
+        </div>
+      </div>
+      <div class="background-details"
+              data-aos="fade-up"            
+              data-aos-offset="100"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+        <div class="background-details-text">
+          <h1 class="orange-text">Research Outcomes</h1>
+          <h3>Up to 80% of research outcomes are models which are archived in standalone computing devices
+            and eventually discarded due to our century-old research publication strategy
+          </h3>
+        </div>
+        <img src="./images/Background-3.png" alt="" class="background-image-one">
+      </div>
+    </section>
+  </div>
+  <section class="solution">
+    <h1 class="solution-header"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">The Eureka Formula<span class="orange-text">.</span></h1>
+    <h3 class="solution-sub-header"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">Our specialised formula guarantees researchers a connection with potential customers
+      using what we call the 4 M's</h3><br><br>
+    <div class="cards-wrapper">
+      <div class="card"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">
+        <img src="./images/1689524200041.png" alt="" height="60" width="60">
+        <h3 class="model-headers">Model<br> Management</h3>
+        <p>Eureka provides a platform where
+          researchers can securely manage,
+          share, and publish their models.</p>
+      </div>
+      <div class="card"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">
+        <img src="./images/1689524160341.png" alt="" height="60" width="60">
+        <h3 class="model-headers">Model<br> Commercialisation</h3>
+        <p>Researchers and research
+          institutions <br>can require a fee for
+          end-users to access<br> and execute
+          their models.</p>
+      </div>
+      <div class="card"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">
+        <img src="./images/1689524140347.png" alt="" height="60" width="60">
+        <h3 class="model-headers">Model<br> Execution</h3>
+        <p> Eureka provides a cloud-based<br>
+          platform for end-users across
+          industries to<br> access and execute 3rd
+          party models for <br>specific applications.
+        </p>
+      </div>
+      <div class="card"
+            data-aos="fade-up"
+            data-aos-offset="100"
+            data-aos-delay="0"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center">
+        <img src="./images/1689524179533.png" alt="" height="60" width="60">
+        <h3 class="model-headers">Model <br>Customisation</h3>
+        <p>End-users can combine multiple<br>
+          models to create a tailored solution for
+          their specific needs.</p>
+      </div>
+    </div>
+  </section>
+  <section class="about-us" data-aos="fade-up">
+    <div class="about-us-text">
+      <h3 class="about-us-header">About Us<span class="orange-text">.</span></h3>
+      <p class="about-us-inner">
+        Find out how we started, what drives us, and how we're reshaping the future of corporate learning.
+      </p>
+      <button class="learn-more" href="about-us.html">Learn More</button>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="blog-text">
+      <h1 class="blog-header"
+    data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="0"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top">Keep up with our diverse set of articles<span class="orange-text">.</span></h1>
+      <h3 class="blog-sub-header"
+    data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="0"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top">Stay updated on the latest articles and blogs in your research field</h3>
+    </div>
+
+
+    <div class="blog-cards">
+      <div class="blog-card"
+    data-aos="fade-right"
+    data-aos-offset="100"
+    data-aos-delay="0"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top">
+        <button class="article-heading-1">Cancer</button>
+        <img class="item-1" src="./images/cancer.jpg" alt="">
+        <p class="date">August 17 2022</p>
+        <p class="item-2">Paul</p>
+        <p class="item-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <a class="read-more" href="blog.html">Read more <span class="material-symbols-outlined" id="forward">arrow_forward</span></a>
+      </div>
+      <div class="blog-card"
+    data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="0"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top">
+        <button class="article-heading-2">Wild Life</button>
+        <img class="item-1" src="./images/wild-life.jpg" alt="">
+        <p class="date">August 17 2022</p>
+        <p class="item-2">Paul</p>
+        <p class="item-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <a class="read-more" href="blog.html">Read more <span class="material-symbols-outlined" id="forward">arrow_forward</span></a>
+      </div>
+      <div class="blog-card"
+    data-aos="fade-left"
+    data-aos-offset="100"
+    data-aos-delay="0"
+    data-aos-duration="600"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top">
+        <button class="article-heading-3">Robotics</button>
+        <img class="item-1" src="./images/robotics.jpg" alt="">
+        <p class="date">August 17 2022</p>
+        <p class="item-2">Paul</p>
+        <p class="item-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <a class="read-more" href="blog.html">Read more <span class="material-symbols-outlined" id="forward">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="footer-wrapper">
+      <p class="footer-items">Terms and Conditions</p><span>|</span>
+      <p class="footer-items">Privacy Policy</p><span>|</span>
+      <p class="footer-items">Contact</p>
+    </div>
+    <div class="footer-link-wrapper">
+      <img class="socials" src="./images/icons8-facebook-24.png" alt="" width="30" height="30">
+      <img class="socials" src="./images/icons8-linkedin-30.png" alt="" width="30" height="30">
+      <img class="socials" src="./images/icons8-twitter-30.png" alt="" width="30" height="30">
+    </div>
+    <div class="leave-a-message">
+      <h4>Leave a message <img class="leave-a-message-icon" src="./images/icons8-chat-64.png" alt="" width="30"
+          height="30"></h4>
+      <form action="https://formsubmit.co/6a2c8744111fc01413831cc1e0f876af" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="Your Email" required><br>
+        <label for="subject">Message:</label><br>
+        <textarea name="body" id="subject" rows="4" cols="30" placeholder="Your Message"></textarea><br>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
